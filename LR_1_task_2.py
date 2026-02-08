@@ -1,6 +1,7 @@
 import numpy as np
 from sklearn import preprocessing
 input_data = np.array([[-1.3, 3.9, 6.2], [-4.9, 2.2, -4.3], [-2.2, 6.5, 4.1], [-5.2, -3.4, -5.2]])
+
 # Бінаризація даних
 data_binarized = preprocessing.Binarizer(threshold=2.2).transform(input_data)
 print("\n Binarized data:\n", data_binarized)
